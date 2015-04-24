@@ -11,7 +11,7 @@ object FeatureExtraction {
    */
   def oneOfK(data: DataFrame, categoricalCols: Array[String], featureCols: Array[String]) = {
 
-    //takes a categorical column, performs 1-of-k encoding and returns a Mao of category -> index
+    //takes a categorical column, performs 1-of-k encoding and returns a Map of category -> index
     def indexColumn(col: String) = {
       data.select(col).map(r => r(0)).distinct.collect.zipWithIndex.toMap
     }
