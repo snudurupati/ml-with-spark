@@ -16,7 +16,7 @@ object FeatureExtraction {
       data.select(col).map(r => r(0)).distinct.collect.zipWithIndex.toMap
     }
 
-    //encodes each categorical column as a Map of category -> index and return a Map of Maps
+    //encodes each categorical column as a Map of category -> index and return a Map of categorical Maps
     val categoryIndexes = categoricalCols.map(c => (c, indexColumn(c))).toMap
 
     //replaces categorical features with corresponding indexes and returns a features array
