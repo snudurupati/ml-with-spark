@@ -3,4 +3,8 @@
  */
 object NaiveBayes {
 
+  def main(args: Array[String]) {
+    println("hello naive Bayes")
+  }
+
 }
