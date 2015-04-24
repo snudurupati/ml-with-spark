@@ -33,7 +33,7 @@ object FeatureExtraction {
 
     val featureRDD = data.map(r => reIndexRow(r))
 
-    featureRDD
+    (categoryIndexes, featureRDD)
   }
 
 }
