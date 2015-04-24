@@ -1,5 +1,6 @@
 /**
  * Created by snudurupati on 4/16/2015.
+ * Machine Learning using Apache Spark. The following implements a binary classification algorithm using decision trees.
  */
 
 import org.apache.log4j.Logger
